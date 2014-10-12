@@ -34,7 +34,7 @@ public class DemoRunning {
 
     @Test
     public void example(){
-        String zkServers="192.168.216.87:2181";
+        String zkServers="127.0.0.1:2181";
         String cluster_root  = "/wp/ha";
         ZkClientx zkclient = ZkClientx.getZkClient(zkServers);
         zkclient.createPersistent(cluster_root, true);
