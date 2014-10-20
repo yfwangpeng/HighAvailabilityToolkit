@@ -21,13 +21,20 @@ High Availability Toolkit提供了若干种当前业界主流方案，每种方�
 		compile
 		package
 
-#####例子
+#####Demo
+zookeeper master-slaver :  <br/>
 test/com.wp.ha.zk.DemoRunning<br/>
 test/com.wp.ha.zk.DemoRunningListener
+<br/>
+gossip cluster : <br/>
+java -jar gossip-java.jar ,then gossip-java will load gossip.conf and run.  <br/>
+![](https://github.com/yfwangpeng/HighAvailabilityToolkit/blob/master/img/gossip_protocol.jpg)
+
 
 ###roadmap
 2014/10/12<br/>
 zookeeper 高可用性的服务器端实现<br/>
-....<br/>
-....<br/>
+2014/10/20<br/>
+high availability based on gossip protocol<br/>
+gossip-java.jar come from http://code.google.com/p/java-gossip
 ....<br/>
