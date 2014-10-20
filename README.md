@@ -36,5 +36,5 @@ java -jar gossip-java.jar ,then gossip-java will load gossip.conf and run.  <br/
 zookeeper 高可用性的服务器端实现<br/>
 2014/10/20<br/>
 high availability based on gossip protocol<br/>
-gossip-java.jar come from http://code.google.com/p/java-gossip
+gossip-java.jar come from http://code.google.com/p/java-gossip<br/>
 ....<br/>
