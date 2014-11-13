@@ -2,6 +2,7 @@ HighAvailabilityToolkit
 ======
 
 High Availability Toolkit includes several solutions by which achieving architecture with high availability is a easy thing.
+It includes "master-slaver","gossip ha","load balancer" and so on ....
 
 ###背景
 互联网企业应用核心系统的高可用性保护了关键数据的完整性 并维持了应用连续运行 ，关键数据的丢失或运行的中断有时是灾难性的。目前已知的企业高可用性方案特点：
@@ -22,19 +23,32 @@ High Availability Toolkit提供了若干种当前业界主流方案，每种方�
 		package
 
 #####Demo
-zookeeper master-slaver :  <br/>
+master-slaver :  <br/>
 test/com.wp.ha.zk.DemoRunning<br/>
 test/com.wp.ha.zk.DemoRunningListener
 <br/>
 gossip cluster : <br/>
 java -jar gossip-java.jar ,then gossip-java will load gossip.conf and run.  <br/>
+<br/>
+<br/>
 ![](https://github.com/yfwangpeng/HighAvailabilityToolkit/blob/master/img/gossip_protocol.jpg)
+<br/>
+<br/>
+load balancer : <br/>
+LoadbalanceClientDemo<br/>
+LoadbalanceServerDemo<br/>
 
 
 ###roadmap
-2014/10/12<br/>
-zookeeper 高可用性的服务器端实现<br/>
-2014/10/20<br/>
+Commits on Oct 12, 2014<br/>
+master-slaver<br/>
+Commits on Oct 20, 2014<br/>
 high availability based on gossip protocol<br/>
 gossip-java.jar come from http://code.google.com/p/java-gossip<br/>
+Commits on Nov 13, 2014<br/>
+load balancer was developed to enable distributing the load among one or more back-end servers,
+a fail-over server will stop passing requests from client to it until it recovers. The client is to specify RoundRobinLoadBalance implementations to use
+in LoadbalanceClientDemo.java, of course you can specify other implementation .<br/>
+....<br/>
+....<br/>
 ....<br/>

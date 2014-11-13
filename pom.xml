@@ -12,6 +12,7 @@
     <modules>
         <module>ha-zookeeper</module>
         <module>ha-gossip</module>
+        <module>ha-loadbalance</module>
     </modules>
 
 </project>
