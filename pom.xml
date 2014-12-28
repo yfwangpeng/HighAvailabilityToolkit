@@ -13,6 +13,7 @@
         <module>ha-zookeeper</module>
         <module>ha-gossip</module>
         <module>ha-loadbalance</module>
+        <module>ha-kafka-storm</module>
     </modules>
 
 </project>
