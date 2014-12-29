@@ -23,20 +23,26 @@ High Availability Toolkit提供了若干种当前业界主流方案，每种方�
 		package
 
 #####Demo
-master-slaver :  <br/>
+> master-slaver :  <br/>
 test/com.wp.ha.zk.DemoRunning<br/>
 test/com.wp.ha.zk.DemoRunningListener
 <br/>
-gossip cluster : <br/>
+> gossip cluster : <br/>
 java -jar gossip-java.jar ,then gossip-java will load gossip.conf and run.  <br/>
 <br/>
 <br/>
 ![](https://github.com/yfwangpeng/HighAvailabilityToolkit/blob/master/img/gossip_protocol.jpg)
 <br/>
 <br/>
-load balancer : <br/>
+> load balancer : <br/>
 LoadbalanceClientDemo<br/>
 LoadbalanceServerDemo<br/>
+> kafka-storm parallel computing  : <br/>
+<br/>
+<br/>
+![](https://github.com/yfwangpeng/HighAvailabilityToolkit/blob/master/img/kafka-storm-parallel-computing.png)
+<br/>
+<br/>
 
 
 ###roadmap
@@ -49,6 +55,7 @@ Commits on Nov 13, 2014<br/>
 load balancer was developed to enable distributing the load among one or more back-end servers,
 a fail-over server will stop passing requests from client to it until it recovers. The client is to specify RoundRobinLoadBalance implementations to use
 in LoadbalanceClientDemo.java, of course you can specify other implementation .<br/>
-....<br/>
+Commits on Dec 28, 2014<br/>
+parallel  computing by kafka-storm<br/>
 ....<br/>
 ....<br/>
